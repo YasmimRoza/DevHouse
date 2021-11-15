@@ -30,6 +30,7 @@ class HouseController{
         return res.json(house);
     }
 
+    //Alterar
     async update(req, res){
         const { filename } = req.file;
         const { house_id } = req.params;
@@ -56,6 +57,7 @@ class HouseController{
         return res.send();
     }
 
+    //Deletar
     async destroy(req, res){
         const { house_id } = req.body;
         const { user_id } = req.headers;
