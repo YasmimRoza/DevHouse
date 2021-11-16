@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import routes from './routes';
 
 class App{
@@ -17,6 +18,8 @@ class App{
     }
 
     middlewares(){
+
+        this.server.use(cors())
 
         //Isto permite a visualização da imagem
         this.server.use(
