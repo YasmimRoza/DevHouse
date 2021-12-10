@@ -4,35 +4,35 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import routes from './routes';
 
-class App{
+class App {
+  constructor() {
+    this.server = express();
 
-    constructor(){
-        this.server = express();
+    // MongoDB configurado localmente
+    mongoose.connect('mongodb://localhost:27017/devhouse', {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
 
-        mongoose.connect('mongodb://localhost:27017/devhouse', {
-            useNewUrlParser: true, useUnifiedTopology: true
-        });
+    this.middlewares();
+    this.routes();
+  }
 
-        this.middlewares();
-        this.routes();
-    }
+  middlewares() {
+    this.server.use(cors());
 
-    middlewares(){
+    // Isto permite a visualização da imagem
+    this.server.use(
+      '/files',
+      express.static(path.resolve(__dirname, '..', 'uploads'))
+    );
 
-        this.server.use(cors())
+    this.server.use(express.json());
+  }
 
-        //Isto permite a visualização da imagem
-        this.server.use(
-            '/files',
-            express.static(path.resolve(__dirname, '..', 'uploads'))
-        );
-
-        this.server.use(express.json());
-    }
-
-    routes(){
-        this.server.use(routes);
-    }
+  routes() {
+    this.server.use(routes);
+  }
 }
 
 export default new App().server;
