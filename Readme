@@ -1,17 +1,17 @@
-#É uma API Rest
+# É uma API Rest
 
-##Utilizando o MongooDB Local
+## Utilizando o MongooDB Local
 
-##Com o conceito de OO
+## Com o conceito de OO
 
-##E foi realizado a configuração de edição como Prettier, ESlint e EditorConfig
+## E foi realizado a configuração de edição como Prettier, ESlint e EditorConfig
 
-###A API é uma alugadora de Casas para desenvolvedores
+- A API é uma alugadora de Casas para desenvolvedores
 
-###Ela possui um sistema de criar e logar os usuários
+- Ela possui um sistema de criar e logar os usuários
 
-###Ela cria a casa com um usuario existente
+- Ela cria a casa com um usuario existente
 
-###Ela reserva a casa para um usuario sem ser o Dono da mesma
+- Ela reserva a casa para um usuario sem ser o Dono da mesma
 
-###É uma atividade realizada da Udemy
+- É uma atividade realizada da Udemy
