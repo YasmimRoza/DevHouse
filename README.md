@@ -1,8 +1,8 @@
-# É uma API Rest
+# É um sistema de agendamento de casas, um CRUD simples
 
-## Utilizando o MongooDB Local
+## Utilizando o conceito Rest e o MongooDB Local
 
-## Com o conceito de OO
+## Com o JavaScript, Orientado a Objeto
 
 ## E foi realizado a configuração de edição como Prettier, ESlint e EditorConfig
 
