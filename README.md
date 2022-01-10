@@ -1,17 +1,9 @@
-# É um sistema de agendamento de casas, um CRUD simples
+# É um sistema de agendamento de casas
 
-## Utilizando o conceito Rest e o MongooDB Local
+<p> A API é uma alugadora de Casas para desenvolvedores. Ela possui um sistema de criar e logar os usuários, cria a casa com um usuario existente e reserva a casa para um usuario sem ser o Dono da mesma. É uma atividade realizada da Udemy.</p>
 
-## Com o JavaScript, Orientado a Objeto
+- Utilizo Node.js com Javascript e MongoDB. 
 
-## E foi realizado a configuração de edição como Prettier, ESlint e EditorConfig
+- Conceitos de Orientação a Objeto e Rest, durante o projeto os usuários foram logados, usando integralmente o conceito HTTP.
 
-- A API é uma alugadora de Casas para desenvolvedores
-
-- Ela possui um sistema de criar e logar os usuários
-
-- Ela cria a casa com um usuario existente
-
-- Ela reserva a casa para um usuario sem ser o Dono da mesma
-
-- É uma atividade realizada da Udemy
+- E foi realizado a configuração de edição como Prettier, ESlint e EditorConfig.
